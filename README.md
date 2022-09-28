@@ -9,6 +9,16 @@ ask user to you know load skills,experiences while user sees other things on hom
 Everything is put inside Main Bundle as We are importing Both AuthModule and Home Module in AppModule and Home Module imports SkillsModule and
 Experience Module. This makes the intial bunde big. The point is we dont need home page on load, we only need it after user is logged in!
 
+Dev Mode:
+
+Initial Chunk Files | Names   | Raw Size
+
+main.js             | main    | 22.93 kB | 
+
+runtime.js          | runtime |  6.59 kB | 
+
+Build Mode:
+
 Output:
 
 Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
@@ -38,6 +48,21 @@ We use this below syntax:
   },
   
   To inform Webpack to split this module in its own bundle, so that we can load it at runtime!
+  
+Dev:
+
+Initial Chunk Files            | Names            |  Raw Size
+
+main.js                        | main             |  11.95 kB | 
+
+
+Lazy Chunk Files               | Names            |  Raw Size
+
+src_app_home_home_module_ts.js | home-home-module |  11.02 kB | 
+
+Build:
+
+
   
 Output:
 
